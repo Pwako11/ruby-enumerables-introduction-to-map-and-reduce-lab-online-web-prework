@@ -70,7 +70,7 @@ def reduce_to_total(source_array, starting_point)
     starting_point += reduce_to_total(source_array[i]) 
     i += 1 
   end 
-  sum
+  starting_point
 end 
 
 def reduce_to_all_true(source_array)
