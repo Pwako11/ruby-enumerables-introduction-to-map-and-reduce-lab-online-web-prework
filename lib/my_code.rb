@@ -53,29 +53,21 @@ def map_to_square(source_array)
   new_array
 end 
 
-def reduce_to_total(source_array)
-  i = 0 
-  sum = 0
-  starting_point = 100
-  while i < source_array.length do 
-    sum += source_array[i] 
-    starting_point += source_array[i]
-    i += 1 
-  end 
-  sum
-  starting_point
-end 
+# def reduce_to_total(source_array)
+#   i = 0 
+#   sum = 0
+#   starting_point = 100
+#   while i < source_array.length do 
+#     sum += source_array[i] 
+#     starting_point += source_array[i]
+#     i += 1 
+#   end 
+#   sum
+#   starting_point
+# end 
 
-# def starting_reduce_to_total(source_array, starting_point)
-  binding.pry
-  i = 0
-  starting_point
-  
-  while i < source_array.length do 
-    starting_point += source_array[i] 
-    i += 1 
-  end 
-  starting_point
+def reduce_to_total(source_array, starting_point)
+  source_array.reduce(starting_point) { |sum, num| sum + num}
 end 
 
 def reduce_to_all_true(source_array)
