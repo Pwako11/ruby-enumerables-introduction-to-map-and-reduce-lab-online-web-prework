@@ -66,9 +66,8 @@ end
 def reduce_to_total_starting_point(source_array, reduce_to_total)
   i = 0
   starting_point = 100
-   while i < source_array.length do 
-     reduce_to_total
-    starting_point += source_array[i] 
+  while i < source_array.length do 
+    starting_point += reduce_to_total(source_array[i]) 
     i += 1 
   end 
   sum
