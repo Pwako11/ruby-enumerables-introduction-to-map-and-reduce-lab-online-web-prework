@@ -64,6 +64,7 @@ def reduce_to_total(source_array,starting_point)
   end 
   sum
   starting_point
+  binding.pry
 end 
 
 # def reduce_to_total_start(source_array, starting_point)
