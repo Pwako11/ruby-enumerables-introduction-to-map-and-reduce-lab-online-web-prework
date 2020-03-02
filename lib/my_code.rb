@@ -56,9 +56,10 @@ end
 def reduce_to_total(source_array)
   i = 0 
   sum = 0
-  starting_poi
+  starting_point = 100
   while i < source_array.length do 
     sum += source_array[i] 
+    starting_point += source_array[i]
     i += 1 
   end 
   sum
