@@ -63,19 +63,20 @@ def reduce_to_total(source_array)
     i += 1 
   end 
   sum
+  starting_point
 end 
 
-def starting_reduce_to_total(source_array, starting_point)
-  binding.pry
-  i = 0
-  starting_point
+# def starting_reduce_to_total(source_array, starting_point)
+#   binding.pry
+#   i = 0
+#   starting_point
   
-  while i < source_array.length do 
-    starting_point += source_array[i] 
-    i += 1 
-  end 
-  starting_point
-end 
+#   while i < source_array.length do 
+#     starting_point += source_array[i] 
+#     i += 1 
+#   end 
+#   starting_point
+# end 
 
 def reduce_to_all_true(source_array)
   i = 0 
