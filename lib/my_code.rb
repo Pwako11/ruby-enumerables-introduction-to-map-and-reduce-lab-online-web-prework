@@ -65,7 +65,6 @@ end
 
 def reduce_to_total_starting_point(source_array)
   i = 0 
-  binding.pry
   starting_point = 100
    while i < source_array.length do 
     starting_point += source_array[i] 
