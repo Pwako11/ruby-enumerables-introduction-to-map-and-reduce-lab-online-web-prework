@@ -84,3 +84,7 @@ def reduce_to_all_true(source_array)
     i += 1
   end 
 end 
+
+def reduce_to_any_true(source_array)
+
+end
